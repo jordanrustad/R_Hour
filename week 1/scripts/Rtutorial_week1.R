@@ -150,6 +150,8 @@ library(stringr)
 nestdata_ALK<-filter(nestdata,str_detect(NEST,"ALK")) # Only keep observations in the NEST column that contain the string ALK (can't do this with base R)
 rm(nestdata_ALK)
 
+--------------------------------------
+
 #4. Let's say I have a variable that is coded as 0 or 1, but it's not actually representing a number/count but rather two groups of data. We need to "tell" R that this is a categorical variable and not a numeric
 str(nestdata) #Note that NestCode is only 0s or 1s (in actuality this represents whether a site is a nest or a random site)
 nestdata$NestCode<-as.factor(nestdata$NestCode)
