@@ -1,0 +1,15 @@
+---
+title: "R Hour"
+format: html
+editor: visual
+---
+
+## Notes from 'Lecture'
+
+-   R studio is the interface for R
+
+    -   Think of R studio as the remote and R as the engine
+
+-   Orientation:
+
+    -   When you open R studio with no project open, the console takes up the whole left hand screen
