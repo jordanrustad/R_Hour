@@ -6,6 +6,7 @@
 ##'R Introduction - R is a open-source programming language, that for ecologists 
 ##'is primarily used for data analysis, visualizing results, mapping, and sometimes 
 ##'even creating reports/theses
+
 ##R studio Introduction - R Studio is a "point and click" (GUI) for R
 
 ##Quick tour of R studio
@@ -19,6 +20,7 @@
 #' Base R (what you've installed already) has some"built-in" functionality. 
 #' Packages are collections of R functions, data, and code to add specific 
 #' functionality. 
+
 # Some examples:
   # ggplot2 - make publication-ready graphs, complete control of graphing process
   # weathercan - access Government of Canada data from weather stations
@@ -43,11 +45,9 @@
   #            Ecology in R Facebook group            
   #            https://stackoverflow.com/ (more for data manipulation)
 
-
 ##Few other quick things, then it's probably easier doing rather than listening!
   # Global Options
   # R Studio cheatsheet ("R Studio the company" is called Posit so you might see some things like "Posit Support", "Posit cheatsheets" etc)
-
 
 ##IMPORTING DATA
   #' There are a few ways to import data and typically depends on what format of data you have. 
@@ -104,6 +104,7 @@ ncol(nestdata) # returns number of columns, should match Global Environment
 dim(nestdata) #returns dimension of data frame; number of rows and columns
 names(nestdata) #returns column names
 
+
 ## EXAMINING, MANIPULATING AND MANAGING DATA
 
 # 1. Add new variable
@@ -118,7 +119,6 @@ nestdata$VEGHTmm <- nestdata$VEGHT * 100
 
 #Oops I can't count, I need to remake that variables because there are only 10mm in a cm
 nestdata$VEGHTmm<-nestdata$VEGHT * 10
-
 
 #Let's make another new variable based on a condition
 
@@ -163,6 +163,7 @@ str(nestdata)
 #5 What if I had information in another dataset that I want to join to this one
 #Import mergdataset.xlsx
 mergedataset <- read_excel('week 1/data/mergedataset.xlsx')
+
 str(mergedataset) #Note that the column FIELD is common between the new dataset and the one we've been working with
 mergedataset_new<-merge(nestdata,mergedataset,all.x=TRUE)
 
@@ -182,7 +183,6 @@ write.csv(new_appenddataset2,"XXXXX")
 
 #TRANSPOSING,MOVING DATA AROUND, SUMMARIZING
 #Import Fulldataset_wide.xlsx
-
 
 #'1 We first want to make the columns CNORT, CSOUT, CWEST, CEAST into two columns. One columns indicating 
 #'what measurement it is and then a column with the measurement itself (going from "wide" data to "long")
@@ -207,6 +207,7 @@ names(longdata)[names(longdata)=="value"]<-"cover"
 
 #And then let's go backward
 widedata<-dcast(longdata, YEAR+JULIAN+FIELD+HABITAT+NEST~Direction,value.var="cover")
+
 #list variables that remain unchanged and then the ~ for the variable we want wide and which value
 
 #* Be careful with some of these functions and always verify they are doing what you want them to do. 
@@ -222,3 +223,4 @@ aggregate_HABITAT<-aggregate(x=fulldataset_wide,by=list(fulldataset_wide$HABITAT
 #big difference between errors and warnings; warnings usually still run function and errors are a critical failure
 
 #Take home message; use the resources; it has all the ways that you can use reshape2 
+
