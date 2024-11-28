@@ -1,0 +1,140 @@
+---
+title: "Resources for Grad Students"
+author: "Jordan Rustad"
+date: "2024-11-28"
+output: html_document
+---
+
+# Resources for Grad Students
+
+### Basic R Skills:
+
+-   If you have no R experience:
+
+    -    <https://www.uvm.edu/~tdonovan/RforFledglings/>
+
+    -   <https://bookdown.org/rwnahhas/IntroToR/>
+
+-   For everything R: <https://stats.oarc.ucla.edu/r/>
+
+-   Base R Cheat Sheet: <https://iqss.github.io/dss-workshops/R/Rintro/base-r-cheat-sheet.pdf>
+
+-   R Cheat Sheet Compilation: <https://www.usu.edu/math/amlc/files/r-studio-reference-sheets-compilation.pdf>
+
+-   Data analysis and plotting for ecologists: <https://datacarpentry.github.io/R-ecology-lesson/index.html>
+
+-   Finding R packages:
+
+    -   Ecology: <https://drmattg.github.io/REcol-verse/>
+
+    -   Strategic Googling
+
+### For Data Management (in and out of R):
+
+-   'dplyr' cheat sheet with logical modifiers: <https://www.rstudio.com/wp-content%2Fuploads%2F2015%2F02%2Fdata-wrangling-cheatsheet.pdf%2F>
+
+-   'lubridate' for managing date/time: <https://rstudio.github.io/cheatsheets/lubridate.pdf>
+
+-   Great resource on 'reshape' - <https://seananderson.ca/2013/10/19/reshape/>
+
+-   File naming and directory structure: <https://csc-ubc-okanagan.github.io/Graduate-Lab-RDM-Handbook/index.html>
+
+## Help with R
+
+-   'ggplot2' cheat sheet: <https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf>
+
+-   Analyzing community ecology data guide: <https://www.davidzeleny.net/anadat-r/doku.php/en:r>
+
+-   R Markdown:
+
+    -   Full guide: <https://bookdown.org/yihui/rmarkdown-cookbook/>
+
+    -   For collaborative writing using 'trackdown': <https://cran.r-project.org/web/packages/trackdown/vignettes/trackdown-workflow.html>
+
+-   Free webinars about R and biostatistics:
+
+    -   <https://learnadv.com/webinars/>
+
+        -   Learn Adventurously also has free textbooks, a full YouTube channel, a blog - all written by a graduate student; Dillon (\@dillonthebiologist) makes learning about R, statistics, and other ecological issues fun
+
+    -   <https://learnadv.com/library/>
+
+-   LDP 2022 Courses Materials:
+
+    -   Productivity and Reproducibility: <https://osf.io/8ycvj/>
+
+    -   Synthesis statistics for ecology: <https://osf.io/he6bx/>
+
+    -   Scientific collaboration: <https://osf.io/t829j/>
+
+    -   Data management: <https://osf.io/jwaps/>
+
+-   For asking R questions:
+
+    -   Stack Overflow
+
+    -   R in Ecology Facebook group
+
+    -   Your supervisor (not Chris or Mark or Richard?) - just Ryan?
+
+        -   Other helpful university folks:
+
+            -   Mark Vanderwahl
+
+            -   Bruno Soares
+
+## Helpful tools for writing and managing files
+
+-   Searching for research (Boolean terms): <https://guides.libraries.uc.edu/c.php?g=222568&p=1472921>
+
+-   Reference Managers (DOWNLOAD NOW FOR YOUR SANITY!)
+
+    -   Zotero: <https://www.zotero.org/>
+
+        -   completely free, web extension, and can be integrated into Word, Google Docs, and R
+
+        -   Manages notes and highlights of the papers you have read and can be exported as txt file
+
+        -   How to link R Studio: <https://gsverhoeven.github.io/post/zotero-rmarkdown-csl/>
+
+-   GitHub:
+
+    -   The basics: <https://ohi-science.org/news/github-going-back-in-time> or <https://docs.github.com/en/get-started/start-your-journey/about-github-and-git>
+
+    -   Github and R: <https://happygitwithr.com/>
+
+-   How to write a scientific paper: <https://guides.lib.uci.edu/c.php?g=334338&p=2249900>
+
+-   Notion or Anytype
+
+    -   multi-use apps that can be used for time management, writing, project management, budgeting
+
+    -   Creates and links data bases that you can use for almost anything
+
+    -   Notion links to online calendar (but it has a lot of AI)
+
+    -   Anytype has less AI
+
+    -   Both have large learning curve but there are a lot of templates and user guides online to streamline the learning
+
+-   Open Science Framework: <https://osf.io/>
+
+    -   This is one option to keep documents when you publish your thesis chapters as manuscripts
+
+    -   Use to manage for the life time of your project to give insights as to how things changed or dump everything here when you're ready to publish (not recommended)
+
+    -   Links to Orcid ID and you can search researchers for their works
+
+## Staying healthy and sane during grad school
+
+-   Down Dog -<https://www.downdogapp.com/web>
+
+    -   Free access to all classes by signing up with student or teacher email
+
+    -   Discounts for non-profit employees (requires contacting company)
+
+-   Psychology Today - <https://www.psychologytoday.com/ca/therapists/saskatchewan>
+
+    -   Filters for therapists in Regina and who accept student insurance
+
+    -   Also free therapists on campus, but they usually have 6-8 weeks booked out
