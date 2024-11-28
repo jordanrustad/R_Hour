@@ -13,3 +13,5 @@ editor: visual
 -   Orientation:
 
     -   When you open R studio with no project open, the console takes up the whole left hand screen
+
+making changes to commit through the git desktop app
