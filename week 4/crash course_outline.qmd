@@ -1,0 +1,68 @@
+---
+title: "Using R to write your thesis"
+author: "Jordan Rustad"
+format: html
+editor: visual
+---
+
+## Where do I begin?
+
+Before R Hour:
+
+-   Download R Studio and a markdown package:
+
+    -   **rmarkdown** - as a package
+
+    -   Quarto - as an extension (requires extra packages to render certain document types)
+
+    -   There are many types of markdown files so you can shop around and pick one, but this tutorial will focus on rmarkdown
+
+-   Reference Manager
+
+    -   Download Zotero
+
+    -   Link Zotero to R Studio
+
+    -   Create a bib.tex - bibliography file that contains all of your references in a Zotero library
+
+    -   Instructions: (From LDP 2022 Course Materials)
+
+        -   **C. Zotero and Zotfile reference management software**
+
+            -   Set up a [Zotero account](https://www.zotero.org/user/login/)
+
+                -   See [this page](https://ubco-biology.github.io/Procedures-and-Guidelines/reference-management-zotero.html) for information on getting started with Zotero
+
+                -   You can use Zotero online or [download the desktop application](https://www.zotero.org/download/); \*\*Note added Sept 6th:\*\* the desktop application needs to be installed if you wish to use Zotfile or the browser add-ons (below).
+
+                -   you also set up a [browser extension/connector](https://www.zotero.org/download/connectors) to allow for easy detection and saving of references
+
+                -   [Zotfile plug-in](http://zotfile.com/) to manage attachments, sync PDFs from your Zotero library, and extract annotations
+
+                -   [Zotero plug-in for RStudio](https://blog.rstudio.com/2020/11/09/rstudio-1-4-preview-citations/):
+
+                    -   RStudio has native integration with Zotero as part of its Visual Markdown editor (requires RStudio v. 1.4 and later)
+
+                    -   works without the BetterBibTeX plugin, but installing BetterBibTex can permit more control over item citation keys
+
+                    -   We will learn more about working with [citations in Markdown](https://bookdown.org/pdr_higgins/rmrwr/adding-citations-to-your-rmarkdown.html) documents in Session 4
+
+            **D. Github**
+
+-   GitHub
+
+    -   Create a GitHub account
+
+    -   Link GitHub to R Studio
+
+    -   Download Git for desktop (optional)
+
+## What will we be doing this session?
+
+1.  Create a branch on a Github project
+2.  Create an R project using a cloned GitHub repository
+    1.  load renv file
+3.  Create example script and markdown document with citations
+4.  Render Rmarkdown doc
+5.  Commit changes and push to our Github account
+6.  Demo of pull request and merging changes
