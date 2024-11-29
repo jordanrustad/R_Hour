@@ -11,7 +11,7 @@ output: html_document
 
 -   If you have no R experience:
 
-    -    <https://www.uvm.edu/~tdonovan/RforFledglings/>
+    -   <https://www.uvm.edu/~tdonovan/RforFledglings/>
 
     -   <https://bookdown.org/rwnahhas/IntroToR/>
 
