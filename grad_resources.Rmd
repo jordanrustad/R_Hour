@@ -3,9 +3,8 @@ title: "Resources for Grad Students"
 author: "Jordan Rustad"
 date: "2024-11-28"
 output: html_document
+bibliography: references.bib
 ---
-
-# Resources for Grad Students
 
 ### Basic R Skills:
 
@@ -75,13 +74,17 @@ output: html_document
 
     -   R in Ecology Facebook group
 
-    -   Your supervisor (not Chris or Mark or Richard?) - just Ryan?
+    -   Your supervisor (just Ryan honestly)
 
         -   Other helpful university folks:
 
             -   Mark Vanderwahl
 
             -   Bruno Soares
+
+    -   ESIL short course: <https://cu-esiil-edu.github.io/esiil-learning-portal/shortcourse/pages/00-course-overviews/shortcourse/01-collaboration/00-home.html>
+
+        -   tutorials on using GitHub, processing geospatial data (uses Python coding)
 
 ## Helpful tools for writing and managing files
 
@@ -116,6 +119,8 @@ output: html_document
     -   Anytype has less AI
 
     -   Both have large learning curve but there are a lot of templates and user guides online to streamline the learning
+
+    -   Notion can also integrate with Zotero: [https://medium.com/\@anna-everett/a-technical-guide-to-setting-up-notero-zotero-notion-plugin-d467d675039b](https://medium.com/@anna-everett/a-technical-guide-to-setting-up-notero-zotero-notion-plugin-d467d675039b)
 
 -   Open Science Framework: <https://osf.io/>
 
