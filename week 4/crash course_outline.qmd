@@ -3,12 +3,13 @@ title: "Using R to write your thesis"
 author: "Jordan Rustad"
 format: html
 editor: visual
-bibliography: references.bib
 ---
 
-## I want to write my thesis in R. What does that even mean?? Where do I begin? 
+## I want to write my thesis in R....
 
-Beginning to use R is a daunting enough task, and hearing words like 'repo' and 'yaml' is enough to make your head spin when you are starting out. The purpose of this R-hour (and this document) is to walk you through the steps you would need to write your thesis in R and how you can use GitHub to version your code. If you miss R hour, there should be enough information here that you can walk through it yourself. We will linking R-Studio with Zotero to insert citations, and GitHub so you can do everything through R-Studio. I have provided alternatives with Shiny apps/GUIs when possible. I will also show you how to use GitHub as a collaborative tool so at the very least you can share your code with your supervisor or collaborators. Make sure you complete the pre-session tasks before coming to R-hour.
+## What does that even mean?? Where do I begin?
+
+Learning to code in R is a daunting enough task, and hearing words like 'repo' and 'yaml' is enough to make your head spin when you are starting out. The purpose of this R-hour (and this document) is to walk you through the steps you would need to write your thesis in R and how you can use GitHub to version your code. The very broad focus is reproducibility (could someone repeat your steps in a different study) and replicability (could someone repeat your study and get similar results). If you miss R hour, there should be enough information here that you can walk through the steps yourself. We will be linking R-Studio with Zotero to insert citations, and GitHub so you can do everything through R-Studio. I have provided alternatives with Shiny apps/GUIs when possible. I will also show you how to use GitHub as a collaborative tool so at the very least you can share your code with your supervisor or collaborators. Make sure you complete the pre-session tasks before coming to R-hour.
 
 [**I will be in the lab and available to help with these tasks on Thursday at 10:00 to help with trouble shooting.**]{.underline}
 
@@ -20,24 +21,18 @@ This is meant as a taster, and not an absolute way to use R, Zotero, or GitHub. 
 
 -   Download R Studio and a markdown package:
 
-    -   **rmarkdown** - as a package
-
-    ```{=html}
-    <!-- -->
-    ```
+    -   **rmarkdown** - download as a package; you will need to download extra packages to rend documents
     -   Quarto - as an extension (requires extra packages to render certain document types)
-
         -   This is what I use as it has slightly more versatility than and simple rmd file
 
         -   [Download here](https://quarto.org/docs/download/)
-
-    -   There are many types of markdown files so you can shop around and pick one, but this tutorial will focus on 'rmarkdown'
+    -   There are many types of markdown files so you can shop around and pick one, but this tutorial will focus on 'rmd' and 'qmd' files
 
 -   Reference Manager
 
-    -   Download Zotero and get at least one paper in your library
+    -   Download Zotero and add at least one paper in your library
 
-    -   Instructions: (From LDP 2022 Course Materials)
+    -   Instructions: (From LDP 2022 Course Materials), \[edits in square brackets\]
 
         -   **C. Zotero and Zotfile reference management software**
 
@@ -53,13 +48,11 @@ This is meant as a taster, and not an absolute way to use R, Zotero, or GitHub. 
 
                 -   [Zotero plug-in for RStudio](https://blog.rstudio.com/2020/11/09/rstudio-1-4-preview-citations/):
 
-                    -   RStudio has native integration with Zotero as part of its Visual Markdown editor (requires RStudio v. 1.4 and later)
+                    -   RStudio has native integration with Zotero as part of its Visual Markdown editor (requires RStudio v. 1.4 and later) \[so you don't need to load it into R like you do with GitHub\]
 
                     -   works without the BetterBibTeX plugin, but installing BetterBibTex can permit more control over item citation keys
 
-                    -   We will learn more about working with [citations in Markdown](https://bookdown.org/pdr_higgins/rmrwr/adding-citations-to-your-rmarkdown.html) documents in Session 4
-
-                        -   You can follow this tutorial to get started on adding in citations but don't feel like you have to
+                    -   We will learn more about working with [citations in Markdown](https://bookdown.org/pdr_higgins/rmrwr/adding-citations-to-your-rmarkdown.html) documents in Session 4 \[You can follow this tutorial to get started on adding in citations but don't feel like you have to\]
 
     -   GitHub
 
@@ -67,7 +60,7 @@ This is meant as a taster, and not an absolute way to use R, Zotero, or GitHub. 
 
     ### Some terminology
 
-    -   Repo = repository, specifically where you are storing code for a given project
+    -   Repo = repository, specifically where you are storing code for a given project in GitHub
 
     -   Commit = changes in your code; does not save to GitHub until you push it
 
@@ -103,7 +96,7 @@ A menu will come up with all existing branches. To create a new one, start typin
 
 Creating a branch creates a copy of the main branch. By branching repos you can prevent fatal errors from affecting all of your code. Instead you push changes to a branch, and then merge branches (more on that later).
 
-### 2. Create an R project using a Cloned GitHub repo (load renv file) 
+### 2. Create an R project using a Cloned GitHub repo (load renv file)
 
 Click Code in the right hand corner. Make sure you are in the Local tab, and click Copy URL. (I always forget where it is so I have put in this picture).
 
@@ -126,6 +119,8 @@ Tell it where you want it to live on your computer.
 The project will now open and the directory and all of the files will be shown in the 'Files' pane on the bottom right hand side. You should also see a folder called 'renv'. This is a copy of the version of R I created the files in and all the libraries I installed. When you clone the repo, the renv automatically loads. If it does not, go to 'activate.R' and run that code.
 
 For more information about [renv](https://rstudio.github.io/renv/articles/renv.html)
+
+**Note:** if you have already started a project but forgot to turn on renv, you can create a renv file by calling 'renv::init'. The renv files will save in your base directory file.
 
 ### 3. Create example script and markdown document with citations
 
@@ -151,11 +146,11 @@ editor: visual
 
 \-\--
 
-This is called a 'yaml' (sometimes called yet another markdown language). This is where you can specify things about your document. You can add a table of contents, what file to use as a reference for bibliography, how to number your pages, what font to use, and more.
+This is called a 'yaml' header (sometimes called 'yet another markdown language'). This is where you can specify things about your document. You can add a table of contents, what file to use as a reference for bibliography, how to number your pages, what font to use, and more.
 
 In this markdown document, type something, anything. 'It's my first markdown doc' is an uninspiring option.
 
-Now we are going to create a citation. Type something about the paper you would like to cite. Then insert the in-text citation. To do so you can use the '\@' symbol or go to Insert - Citation (along the top bar of your Rmd doc). A pop up window will ask you what format you want your citations to be in, and if you want to generate a '.bib' file. Click yes to the bib file. This is where R will pull the full citations from when you render your document. You won't see the full bibliography until you render the document.
+Now we are going to create a citation. Type something about the paper you would like to cite. Then insert the in-text citation. To do this you can use the '\@' symbol \[to call a drop box of your papers in Zotero\] or go to Insert - Citation (along the top bar of your Rmd doc). A pop up window will ask you what format you want your citations to be in, and if you want to generate a '.bib' file. Click yes to the bib file. This is where R will pull the full citations from when you render your document. You won't see the full bibliography until you render the document.
 
 The bibliography is always at the bottom of the page. So what I like to do is insert a Header 1 title and name it 'References' so that I know where the end of my document always is.
 
@@ -189,4 +184,6 @@ Because you are creating new files and not editing existing ones, there is unlik
 
 You might notice that I have more files than you. I have 'html' and the Excel sheets are missing from week 1! That's thanks to a file called '.gitignore'. GitHub is meant to be used as a versioning tool and not a place to save files or as a backup.
 
-You can pre-register your research at OSF. You can save all file types here and keep a living history of your project as it changes and evolves. You can link it to GitHub, to Google Drives, and other software. You can also use it to see what other researchers are maybe working on but have not published yet.
+You can pre-register your research at [OSF](https://osf.io/). You can save all file types here and keep a living history of your project as it changes and evolves. You can link it to GitHub, to Google Drives, and other software. You can also use it to see what other researchers are maybe working on but have not published yet.
+
+You don't have to do anything here, I will just walk you through how I am using OSF to help manage my project.
