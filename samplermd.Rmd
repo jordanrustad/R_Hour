@@ -1,0 +1,13 @@
+---
+title: "Sample RMD"
+author: "Jordan Rustad"
+date: "2024-12-05"
+output: html_document
+bibliography: references.bib
+---
+
+## Title of first section
+
+Urban wildlife has become a more population study subject in the last 10 years [@adams2005].
+
+# References 
