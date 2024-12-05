@@ -6,7 +6,7 @@ editor: visual
 bibliography: references.bib
 ---
 
-## I want to write my thesis in R. What does that even mean?? Where do I begin? 
+## I want to write my thesis in R. What does that even mean?? Where do I begin?
 
 Beginning to use R is a daunting enough task, and hearing words like 'repo' and 'yaml' is enough to make your head spin when you are starting out. The purpose of this R-hour (and this document) is to walk you through the steps you would need to write your thesis in R and how you can use GitHub to version your code. If you miss R hour, there should be enough information here that you can walk through it yourself. We will linking R-Studio with Zotero to insert citations, and GitHub so you can do everything through R-Studio. I have provided alternatives with Shiny apps/GUIs when possible. I will also show you how to use GitHub as a collaborative tool so at the very least you can share your code with your supervisor or collaborators. Make sure you complete the pre-session tasks before coming to R-hour.
 
@@ -22,9 +22,8 @@ This is meant as a taster, and not an absolute way to use R, Zotero, or GitHub. 
 
     -   **rmarkdown** - as a package
 
-    ```{=html}
     <!-- -->
-    ```
+
     -   Quarto - as an extension (requires extra packages to render certain document types)
 
         -   This is what I use as it has slightly more versatility than and simple rmd file
@@ -103,7 +102,7 @@ A menu will come up with all existing branches. To create a new one, start typin
 
 Creating a branch creates a copy of the main branch. By branching repos you can prevent fatal errors from affecting all of your code. Instead you push changes to a branch, and then merge branches (more on that later).
 
-### 2. Create an R project using a Cloned GitHub repo (load renv file) 
+### 2. Create an R project using a Cloned GitHub repo (load renv file)
 
 Click Code in the right hand corner. Make sure you are in the Local tab, and click Copy URL. (I always forget where it is so I have put in this picture).
 
